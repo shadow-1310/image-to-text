@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Processing Result</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    .images {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+    img {
+      max-width: 800px;
+      height: auto;
+      margin: 10px;
+    }
+    .text {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 style = "text-align:center;">Resolute.Ai</h1>
+    <h2>Image Processing Result</h2>
+    <div class="images">
+      <img src="{{ original_image }}" alt="">
+      <img src="{{ processed_image }}" alt="">
+    </div>
+    <div class="text">
+      <h3>Processed Text:</h3>
+      <p>{{ processed_text }}</p>
+    </div>
+  </div>
+</body>
+</html>
