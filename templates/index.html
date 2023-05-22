@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Processing Website</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    input[type="file"] {
+      margin-bottom: 10px;
+    }
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1 style = "text-align:center;">Resolute.Ai</h1>
+  <h3>Task - 1</h3>
+  <p>Process any given image/pdf and read the text. Using open- CV approach and Py-tesseract only.</p>
+  <h4>User Story</h4>
+  <p>As a user I should be able to process images and extract the text from the image.</p>
+  <div class="container">
+    <form action="/process" method="post" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required>
+      <button type="submit">Process Image</button>
+    </form>
+  </div>
+</body>
+</html>
